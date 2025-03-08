@@ -1,0 +1,110 @@
+/* Fixes for website issues */
+
+/* Fix for Font Awesome icons */
+.fa, .fas, .far, .fal, .fab {
+    display: inline-block !important;
+}
+
+/* Back button styles */
+#back-btn {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+}
+
+#back-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+#back-btn:active {
+    transform: translateY(0);
+}
+
+/* Blood drop icon styles */
+.blood-drop {
+    color: #ef4444 !important;
+}
+
+/* Fix for navigation issues */
+.clickable {
+    cursor: pointer !important;
+}
+
+/* Fix for page transitions */
+.page-transition {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Ensure modals work correctly */
+.hidden {
+    display: none !important;
+}
+
+/* Fix for button styles */
+button {
+    cursor: pointer;
+}
+
+/* Fix for dashboard sections */
+.dashboard-section {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Add clear border color for primary elements */
+.border-primary {
+    border-color: #588157 !important;
+}
+
+.text-primary {
+    color: #588157 !important;
+}
+
+/* Fix navbar spacing */
+.navbar {
+    margin-bottom: 1rem;
+}
+
+/* Fix for button press effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Landing page styles */
+.landing-page {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.landing-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.landing-page #app {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.landing-page section {
+    margin-bottom: 2rem;
+}
+
+.landing-page .hover-lift {
+    transition: all 0.3s ease;
+}
+
+.landing-page .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page footer.bg-dark {
+    background-color: var(--color-dark);
+} 

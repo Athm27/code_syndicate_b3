@@ -1,101 +1,46 @@
-# MediRemind - Medicine Reminder System
+# function-bind <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-A simple web application for managing medicine reminders, built with HTML, CSS (TailwindCSS), and vanilla JavaScript.
+[![github actions][actions-image]][actions-url]
+<!--[![coverage][codecov-image]][codecov-url]-->
+[![dependency status][deps-svg]][deps-url]
+[![dev dependency status][dev-deps-svg]][dev-deps-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
-## Features
+[![npm badge][npm-badge-png]][package-url]
 
-- **User Authentication & Roles**
+Implementation of function.prototype.bind
 
-  - Simple user login and registration (using localStorage)
-  - Three user roles: Patient, Caretaker, Doctor
-  - Patients can link multiple caretakers
+Old versions of phantomjs, Internet Explorer < 9, and node < 0.6 don't support `Function.prototype.bind`.
 
-- **Medicine Stock Monitoring & Ordering**
+## Example
 
-  - Patients can log their medicines and track stock levels
-  - Low stock alerts
-  - Basic mockup of medicine ordering
-
-- **Medicine Reminders**
-
-  - Set reminders for medicine intake
-  - Browser notifications for reminders
-
-- **Real-time Notifications**
-  - Alerts when medicine reminder is due
-  - Alerts to caretakers if patient misses a reminder
-
-## How to Use
-
-1. **Open the application**
-
-   - Simply open the `index.html` file in a web browser
-
-2. **Login or Register**
-
-   - Use the demo accounts or create your own account
-   - Demo accounts:
-     - Patient: username: `patient1`, password: `password`
-     - Caretaker: username: `caretaker1`, password: `password`
-     - Doctor: username: `doctor1`, password: `password`
-
-3. **Patient Dashboard**
-
-   - Add medicines and set stock levels
-   - Create reminders for medicine intake
-   - Update stock or order more medicine when running low
-
-4. **Caretaker Dashboard**
-
-   - Monitor patients' medicine stock levels
-   - Receive alerts when patients miss medication
-
-5. **Doctor Dashboard**
-   - Monitor patients' medication adherence
-   - View patients' medicine schedules
-
-## Technical Details
-
-- **Data Storage**: All data is stored in the browser's localStorage
-- **Component System**: Custom React-like component system for better maintainability
-- **Styling**: TailwindCSS for responsive design
-- **Notifications**: Browser alerts for medicine reminders
-
-## Project Structure
-
-```
-├── index.html              # Main HTML file
-├── styles.css              # Custom CSS styles
-├── js/
-│   ├── app.js              # Main application logic
-│   ├── component.js        # Component system
-│   └── store.js            # Data management
-├── components/
-│   ├── Auth/               # Authentication components
-│   │   ├── Login.js
-│   │   └── Register.js
-│   ├── Dashboard/          # Dashboard components
-│   │   ├── PatientDashboard.js
-│   │   ├── CaretakerDashboard.js
-│   │   └── DoctorDashboard.js
-│   ├── Medicine/           # Medicine-related components
-│   │   ├── MedicineForm.js
-│   │   ├── MedicineList.js
-│   │   └── MedicineReminder.js
-│   └── Shared/             # Shared components
-│       ├── Alert.js
-│       └── Navbar.js
+```js
+Function.prototype.bind = require("function-bind")
 ```
 
-## Limitations
+## Installation
 
-- This is a frontend-only application with no backend or database
-- Data is stored in localStorage and will be lost if browser storage is cleared
-- Notifications only work when the application is open in the browser
+`npm install function-bind`
 
-## Future Improvements
+## Contributors
 
-- Backend integration with a real database
-- Mobile app version with push notifications
-- More advanced reminder settings (recurring, custom frequencies)
-- Integration with real pharmacies for ordering
+ - Raynos
+
+## MIT Licenced
+
+[package-url]: https://npmjs.org/package/function-bind
+[npm-version-svg]: https://versionbadg.es/Raynos/function-bind.svg
+[deps-svg]: https://david-dm.org/Raynos/function-bind.svg
+[deps-url]: https://david-dm.org/Raynos/function-bind
+[dev-deps-svg]: https://david-dm.org/Raynos/function-bind/dev-status.svg
+[dev-deps-url]: https://david-dm.org/Raynos/function-bind#info=devDependencies
+[npm-badge-png]: https://nodei.co/npm/function-bind.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/function-bind.svg
+[license-url]: LICENSE
+[downloads-image]: https://img.shields.io/npm/dm/function-bind.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=function-bind
+[codecov-image]: https://codecov.io/gh/Raynos/function-bind/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/Raynos/function-bind/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/Raynos/function-bind
+[actions-url]: https://github.com/Raynos/function-bind/actions
